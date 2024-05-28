@@ -1,8 +1,10 @@
 import { FaLocationArrow, FaClock, FaPhone } from "react-icons/fa6";
 import MagicButton from "./MagicButton";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
+import Image from "next/image"; // Import next/image
 import Pic from "../public/Asset 1.png";
 import Socials from "./Socials";
+
 const Hero = () => {
   return (
     <section id="home" className="h-full">
@@ -37,8 +39,8 @@ const Hero = () => {
             </div>
           </div>
           <div className="order-1 xl:order-none mb-3 xl:mb-0 relative w-[300px] h-[300px] xl:w-[600px] xl:h-[600px]">
-            <img
-              src={Pic.src}
+            <Image
+              src={Pic}
               alt="Dr. Shaidul Hoque Shawon"
               className="object-contain w-full h-full"
             />
