@@ -8,7 +8,7 @@ export const gridItems = [
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
     img: "2_27.jpg",
-    spareImg: "",
+    spareImg: "2_27.jpg",
   },
   {
     id: 2,
@@ -18,7 +18,7 @@ export const gridItems = [
     imgClassName: "",
     titleClassName: "justify-start",
     img: "rid2.jpg",
-    spareImg: "",
+    spareImg: "rid2.jpg",
   },
   {
     id: 3,
@@ -28,7 +28,7 @@ export const gridItems = [
     imgClassName: "",
     titleClassName: "justify-center",
     img: "rid2.jpg",
-    spareImg: "",
+    spareImg: "rid2.jpg",
   },
   {
     id: 4,
@@ -38,7 +38,7 @@ export const gridItems = [
     imgClassName: "",
     titleClassName: "justify-start",
     img: "rid2.jpg",
-    spareImg: "",
+    spareImg: "rid2.jpg",
   },
 
   {
@@ -59,7 +59,7 @@ export const gridItems = [
     imgClassName: "",
     titleClassName: "justify-center md:max-w-full max-w-60 text-center",
     img: "rid2.jpg",
-    spareImg: "",
+    spareImg: "rid2.jpg",
   },
 ];
 
