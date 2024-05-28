@@ -1,6 +1,7 @@
+"use client";
+
 import { cn } from "@/lib/utils";
 import React, { useEffect, useState } from "react";
-import Image from 'next/image';
 
 export const InfiniteMovingCards = ({
   items,
@@ -21,29 +22,29 @@ export const InfiniteMovingCards = ({
   const containerRef = React.useRef<HTMLDivElement>(null);
   const scrollerRef = React.useRef<HTMLUListElement>(null);
 
-  const [start, setStart] = useState(false);
-
   useEffect(() => {
-    function addAnimation() {
-      if (containerRef.current && scrollerRef.current) {
-        const scrollerContent = Array.from(scrollerRef.current.children);
-
-        scrollerContent.forEach((item) => {
-          const duplicatedItem = item.cloneNode(true);
-          if (scrollerRef.current) {
-            scrollerRef.current.appendChild(duplicatedItem);
-          }
-        });
-
-        getDirection();
-        getSpeed();
-        setStart(true);
-      }
-    }
-
     addAnimation();
-  }, [direction, speed, pauseOnHover]);
+  }, []);
+  
+  const [start, setStart] = useState(false);
+  
+  function addAnimation() {
+    if (containerRef.current && scrollerRef.current) {
+      const scrollerContent = Array.from(scrollerRef.current.children);
 
+      scrollerContent.forEach((item) => {
+        const duplicatedItem = item.cloneNode(true);
+        if (scrollerRef.current) {
+          scrollerRef.current.appendChild(duplicatedItem);
+        }
+      });
+
+      getDirection();
+      getSpeed();
+      setStart(true);
+    }
+  }
+  
   const getDirection = () => {
     if (containerRef.current) {
       if (direction === "left") {
@@ -71,7 +72,7 @@ export const InfiniteMovingCards = ({
       }
     }
   };
-
+  
   return (
     <div
       ref={containerRef}
@@ -103,14 +104,14 @@ export const InfiniteMovingCards = ({
               </span>
               <div className="relative z-20 mt-6 flex flex-row items-center">
                 <div className="me-3">
-                  <Image src="/profile.svg" alt="profile" />
+                  <img src="/profile.svg" alt="profile" />
                 </div>
                 <span className="flex flex-col gap-1">
                   <span className="text-xl font-bold leading-[1.6] text-[#0D1B3C]">
                     {item.name}
                   </span>
                   <span className="text-base leading-[1.6] text-white font-normal">
-                    ⭐⭐⭐⭐⭐
+                  ⭐⭐⭐⭐⭐
                   </span>
                 </span>
               </div>
