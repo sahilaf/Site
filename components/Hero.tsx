@@ -7,7 +7,7 @@ import Socials from "./Socials";
 
 const Hero = () => {
   return (
-    <section id="home" className="h-full">
+    <section id="home" className="h-full mt-16">
       <div className="container mx-auto h-full -mt-5 xl:-mt-20">
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8">
           <div className="text-center xl:text-left order-2 xl:order-none">
@@ -19,7 +19,7 @@ const Hero = () => {
             <p className="text-center md:text-left md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl text-gray-400 font-semibold">
               Hi! I&apos;m Dr. Shaidul Hoque Shawon, Dental Surgeon.
             </p>
-            <div className="flex justify-center lg:justify-start">
+            <div className="flex justify-center md:justify-start">
               <div>
                 <a href="#contact">
                   <MagicButton
@@ -37,6 +37,27 @@ const Hero = () => {
                 />
               </div>
             </div>
+
+            <div className="xl:pb-10 flex flex-row justify-evenly md:justify-start mt-10 text-base md:text-xl ">
+              <div className=" text-left text-gray-400 mr-4">
+                <div className="flex items-center justify-center md:justify-start space-x-2">
+                  <FaClock className="text-xl text-[#0070F2] mr-4" />
+                  <div>
+                    <h3 className="font-semibold text-[#0D1B3C]">Working hours</h3>
+                    <h2>Sat-Thu(4.30 pm - 9.00 pm)</h2>
+                  </div>
+                </div>
+              </div>
+              <div className=" text-left text-gray-400 ">
+                <div className="flex items-center space-x-2 justify-center md:justify-start">
+                  <FaPhone className="text-xl text-[#0070F2] mr-4" />
+                  <div>
+                    <h3 className="font-semibold text-[#0D1B3C]">Emergency Service</h3>
+                    <h3> (01755698087)</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <div className="order-1 xl:order-none mb-3 xl:mb-0 relative w-[300px] h-[300px] xl:w-[600px] xl:h-[600px]">
             <Image
@@ -44,28 +65,6 @@ const Hero = () => {
               alt="Dr. Shaidul Hoque Shawon"
               className="object-contain w-full h-full"
             />
-          </div>
-        </div>
-      </div>
-      <div className="xl:pb-10 flex flex-row justify-center mt-4 xl:mt-0 text-base md:text-xl">
-        <div className="pr-10 md:pr-20 text-right border-r-2 border-gray-400 text-gray-400">
-          <div className="flex items-center justify-end space-x-2">
-            <FaClock className="text-lg" />
-            <div>
-              <h3 className="font-semibold">Working hours</h3>
-              <h2>Sat-Thu</h2>
-              <h2>4pm-9pm</h2>
-            </div>
-          </div>
-        </div>
-        <div className="ml-10 md:ml-20 text-left text-gray-400">
-          <div className="flex items-center space-x-2">
-            <FaPhone className="text-lg" />
-            <div>
-              <h3 className="font-semibold">Emergency </h3>
-              <h3>Service</h3>
-              <h2>012323813</h2>
-            </div>
           </div>
         </div>
       </div>
