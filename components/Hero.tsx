@@ -2,7 +2,7 @@ import { FaLocationArrow, FaClock, FaPhone } from "react-icons/fa6";
 import MagicButton from "./MagicButton";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import Image from "next/image"; // Import next/image
-import Pic from "../public/Asset 1.png";
+import Pic from "../public/Main.png";
 import Socials from "./Socials";
 
 const Hero = () => {
