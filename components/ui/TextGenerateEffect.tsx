@@ -20,7 +20,7 @@ export const TextGenerateEffect = ({
       },
       {
         duration: 2,
-        delay: stagger(0.2),
+        delay: stagger(0.5),
       }
     );
   }, [animate, wordsArray]); // Add animate and wordsArray to the dependency array
