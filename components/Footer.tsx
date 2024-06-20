@@ -76,7 +76,7 @@ const Footer = () => {
             <div className="lg:w-[54%] order-2 lg:order-none">
               <form
                 ref={formRef}
-                className="flex flex-col gap-6 p-10 bg-white rounded-lg -mx-10"
+                className="flex flex-col gap-6 p-10 bg-white rounded-lg -mx-20"
                 action="https://api.web3forms.com/submit"
                 method="POST"
                 onSubmit={handleSubmit}
@@ -144,7 +144,7 @@ const Footer = () => {
                 </Button>
               </form>
             </div>
-            <div className="flex-1 flex items-center lg:justify-end order-1 lg:order-none mb-8 lg:mb-0">
+            <div className="flex-1 flex items-center justify-center lg:justify-end order-1 lg:order-none mb-8 lg:mb-0">
               <ul className="flex flex-col gap-10">
                 {info.map((item, index) => (
                   <li key={index} className="flex item-center gap-6">

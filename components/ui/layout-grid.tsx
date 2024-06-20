@@ -10,9 +10,14 @@ type Card = {
   thumbnail: string;
 };
 
+const isTouchDevice = () =>
+  typeof window !== "undefined" &&
+  ("ontouchstart" in window ||
+    navigator.maxTouchPoints > 0);
+
 export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
   return (
-    <div className="w-full h-full p-10 grid grid-cols-1 md:grid-cols-3 max-w-7xl mx-auto gap-4 relative">
+    <div className="w-full h-full py-10 grid grid-cols-1 md:grid-cols-3 max-w-7xl mx-auto gap-4 relative">
       {cards.map((card, i) => (
         <div key={i} className={cn(card.className, "")}>
           <motion.div
@@ -53,19 +58,21 @@ const HoverCard = ({ card }: { card: Card }) => {
   const [isHovered, setIsHovered] = React.useState(false);
 
   const handleMouseEnter = () => {
-    setIsHovered(true);
+    if (!isTouchDevice()) {
+      setIsHovered(true);
+    }
   };
 
   const handleMouseLeave = () => {
-    setIsHovered(false);
+    if (!isTouchDevice()) {
+      setIsHovered(false);
+    }
   };
 
-  const handleTouchStart = () => {
-    setIsHovered(true);
-  };
-
-  const handleTouchEnd = () => {
-    setIsHovered(false);
+  const handleClick = () => {
+    if (isTouchDevice()) {
+      setIsHovered(!isHovered);
+    }
   };
 
   return (
@@ -75,11 +82,10 @@ const HoverCard = ({ card }: { card: Card }) => {
         "bg-white rounded-xl h-full w-full"
       )}
       layout
-      whileHover={{ scale: 1.03 }}
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-      onTouchStart={handleTouchStart}
-      onTouchEnd={handleTouchEnd}
+      whileHover={!isTouchDevice() ? { scale: 1.03 } : undefined}
+      onClick={handleClick} // Handle click event to toggle isHovered state
+      onMouseEnter={handleMouseEnter} // Handle mouse enter for desktop hover
+      onMouseLeave={handleMouseLeave} // Handle mouse leave for desktop hover
     >
       {isHovered && <SelectedCard selected={card} />}
       <BlurImage card={card} />
@@ -89,7 +95,7 @@ const HoverCard = ({ card }: { card: Card }) => {
 
 const SelectedCard = ({ selected }: { selected: Card }) => {
   return (
-    <div className="bg-transparent h-full w-full flex flex-col justify-end rounded-lg shadow-2xl relative z-[60]">
+    <div className="bg-transparent h-full w-full flex flex-col justify-end rounded-lg shadow-2xl relative z-40">
       <motion.div
         initial={{
           opacity: 0,

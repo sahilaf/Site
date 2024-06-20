@@ -20,7 +20,7 @@ const Layout = () => {
 
   return (
     <motion.div
-      className="h-[200vh] md:h-[130vh] py-20 w-full"
+      className="h-[170vh] md:h-[130vh] py-20 w-full"
       initial={{ opacity: 0, y: 20 }}
       animate={controls}
       exit={{ opacity: 0, y: 20 }}
