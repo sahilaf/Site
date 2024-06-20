@@ -1,8 +1,6 @@
 import { useState, useRef, FormEvent } from 'react';
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
-import { FaLocationArrow } from 'react-icons/fa6';
 import { motion } from 'framer-motion';
-import MagicButton from './MagicButton';
 import { Button } from './ui/button';
 import { Textarea } from './ui/textarea';
 import { Input } from './ui/input';

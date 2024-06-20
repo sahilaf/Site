@@ -52,6 +52,22 @@ const BlurImage = ({ card }: { card: Card }) => {
 const HoverCard = ({ card }: { card: Card }) => {
   const [isHovered, setIsHovered] = React.useState(false);
 
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+
+  const handleTouchStart = () => {
+    setIsHovered(true);
+  };
+
+  const handleTouchEnd = () => {
+    setIsHovered(false);
+  };
+
   return (
     <motion.div
       className={cn(
@@ -60,12 +76,12 @@ const HoverCard = ({ card }: { card: Card }) => {
       )}
       layout
       whileHover={{ scale: 1.03 }}
-      onHoverStart={() => setIsHovered(true)}
-      onHoverEnd={() => setIsHovered(false)}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+      onTouchStart={handleTouchStart}
+      onTouchEnd={handleTouchEnd}
     >
-      {isHovered && (
-        <SelectedCard selected={card} />
-      )}
+      {isHovered && <SelectedCard selected={card} />}
       <BlurImage card={card} />
     </motion.div>
   );
@@ -103,3 +119,5 @@ const SelectedCard = ({ selected }: { selected: Card }) => {
     </div>
   );
 };
+
+export default LayoutGrid;
