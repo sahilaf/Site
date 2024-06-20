@@ -47,6 +47,11 @@ const config = {
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        fontSize: {
+          '10xl': '10rem', // Add this line or similar for larger text sizes
+          '11xl': '12rem', // Example larger size
+          '12xl': '14rem', // Example larger size
+        },
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",

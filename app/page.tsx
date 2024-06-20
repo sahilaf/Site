@@ -1,13 +1,13 @@
 "use client";
 
 import Hero from "@/components/Hero";
-import Grid from "@/components/Grid";
 import Footer from "@/components/Footer";
 import Clients from "@/components/Clients";
 import Approach from "@/components/Approach";
 import Experience from "@/components/Experience";
 import RecentProjects from "@/components/RecentProjects";
 import Header from "@/components/Header";
+import Layout from "@/components/Layout";
 
 const Home = () => {
   return (
@@ -15,7 +15,7 @@ const Home = () => {
       <div className="max-w-7xl w-full">
         <Header/>
         <Hero />
-        <Grid />
+        <Layout />
         <RecentProjects />
         <Clients />
         <Experience />
