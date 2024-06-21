@@ -4,14 +4,14 @@ export const projects = [
     title: "MEDICARE GENERAL HOSPITAL",
     des: "222/1, 1st- 6th Floor, Taher Trade Center, 12 Police Lines Rd, Cumilla 3500",
     img: "Hospital.PNG",
-    link: "Sat-thus: 4.30 pm-9.00 pm",
+    link: "Sat-thu: 4.30 pm-9.00 pm",
   },
   {
     id: 2,
     title: "Cumilla Diabetic Hospital",
     des: " Sulivan Road , Bagichagaon(near fire brigade pond, Cumilla 3500",
     img: "Hospital2.jpg",
-    link: "Sat-thus: 9.00 am-2.30 pm",
+    link: "Sat-thu: 9.00 am-2.30 pm",
   }
 ];
 

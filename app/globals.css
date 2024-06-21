@@ -83,3 +83,44 @@
     @apply font-bold text-4xl md:text-5xl text-center;
   }
 }
+
+/* Custom underline hover effect */
+.underline-hover::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: white;
+  visibility: hidden;
+  transition: width 0.3s ease-in-out;
+}
+
+.underline-hover:hover::before {
+  visibility: visible;
+  width: 100%;
+}
+
+/* Custom left-to-right background transition */
+.from-left::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: #0070F2;
+  transition: width 0.5s ease-in-out;
+  z-index: -1;
+  border-radius: inherit;
+}
+
+.from-left:hover::before {
+  width: 100%;
+}
+
+.inline-flex {
+  position: relative;
+  overflow: hidden;
+}

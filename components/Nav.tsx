@@ -9,7 +9,7 @@ const links = [
     path: "#home",
   },
   {
-    name: "experience",
+    name: "availability",
     path: "#experience",
   },
   {

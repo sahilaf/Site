@@ -72,7 +72,7 @@ const Footer = () => {
         className="py-6"
       >
         <div className="container mx-auto">
-          <div className="flex flex-col lg:flex-row gap-[30px]">
+          <div className="flex flex-col lg:flex-row gap-[30px] md:gap-24">
             <div className="lg:w-[54%] order-2 lg:order-none">
               <form
                 ref={formRef}

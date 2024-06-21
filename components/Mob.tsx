@@ -7,7 +7,7 @@ import { RxCross2 } from "react-icons/rx";
 
 const links = [
   { title: "Home", href: "#home" },
-  { title: "Experience", href: "#experience" },
+  { title: "Availability", href: "#experience" },
   { title: "Services", href: "#services" },
   { title: "Reviews", href: "#reviews" },
   { title: "Contact", href: "#contact" },
@@ -56,13 +56,14 @@ function MobileNav() {
           ></div>
           <motion.div
             initial={{ y: "-100%", opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
+            animate={{ y: 0, opacity: 1}}
             exit={{ y: "-100%" }}
             transition={{ type: "spring", stiffness: 100, damping: 15 }}
-            className="relative flex flex-col justify-between p-8 h-screen box-border bg-[#0D1B3C] z-50"
+            className="relative flex flex-col justify-between p-8 h-screen box-border bg-gradient-to-br from-[#0D1B3C] to-[#0070F2] z-50"
+
           >
             <RxCross2
-              className="text-2xl cursor-pointer absolute top-4 right-4 mx-5 mt-6 text-white hover:text-[#5bc4d1]"
+              className="text-2xl cursor-pointer absolute top-4 right-4 mx-5 mt-6 text-white"
               onClick={() => setMenuOpen(false)}
             />
             <div className="flex gap-2 flex-col mt-14 ml-6 mr-32">
@@ -85,7 +86,7 @@ function MobileNav() {
                     >
                       <a
                         href={href}
-                        className="no-underline text-white text-4xl hover:text-[#5bc4d1]"
+                        className="relative no-underline text-white text-4xl underline-hover"
                         onClick={() => setMenuOpen(false)}
                       >
                         {title}
