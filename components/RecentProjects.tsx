@@ -16,7 +16,7 @@ const RecentProjects = () => {
             key={item.id}
           >
             <PinContainer title={item.link}>
-              <div className="relative flex items-end justify-start w-[400px] md:w-[500px] overflow-hidden md:h-[46vh] h-[36vh]  rounded-2xl">
+              <div className="relative flex items-end justify-start w-[350px] md:w-[500px] overflow-hidden md:h-[46vh] h-[36vh]  rounded-2xl">
                 {/* Background Image with Dark Overlay */}
                 <div className="absolute inset-0 w-full h-full overflow-hidden">
                   <Image src={item.img} alt="Project Background Image" layout="fill" objectFit="cover" className="brightness-50" />
