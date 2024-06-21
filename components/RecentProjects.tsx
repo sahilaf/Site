@@ -2,6 +2,7 @@ import React from "react";
 import { projects } from "@/data";
 import { PinContainer } from "./ui/Pin";
 import Image from "next/image";
+import { FaLocationArrow } from "react-icons/fa6";
 
 const RecentProjects = () => {
   return (
@@ -16,7 +17,7 @@ const RecentProjects = () => {
             key={item.id}
           >
             <PinContainer title={item.link}>
-              <div className="relative flex items-end justify-start w-[350px] md:w-[500px] overflow-hidden md:h-[46vh] h-[36vh]  rounded-2xl">
+              <div className="relative flex items-end justify-start w-[350px] md:w-[500px] overflow-hidden md:h-[46vh] h-[36vh] rounded-2xl">
                 {/* Background Image with Dark Overlay */}
                 <div className="absolute inset-0 w-full h-full overflow-hidden">
                   <Image src={item.img} alt="Project Background Image" layout="fill" objectFit="cover" className="brightness-50" />
@@ -24,7 +25,17 @@ const RecentProjects = () => {
                 {/* Content */}
                 <div className="relative z-10 p-6 text-left">
                   <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1 text-white">{item.title}</h1>
-                  <p className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2 text-white mt-2">{item.des}</p>
+                  <div className="flex items-center">
+                    <a
+                      className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2 text-white mt-2 underline"
+                      href={item.map}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {item.des}
+                    </a>
+                    <FaLocationArrow className="text-white text-3xl ml-2 mt-2" />
+                  </div>
                 </div>
               </div>
             </PinContainer>

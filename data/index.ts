@@ -5,6 +5,7 @@ export const projects = [
     des: "222/1, 1st- 6th Floor, Taher Trade Center, 12 Police Lines Rd, Cumilla 3500",
     img: "Hospital.PNG",
     link: "Sat-thu: 4.30 pm-9.00 pm",
+    map: "https://www.google.com/maps/place/MEDICARE+GENERAL+HOSPITAL+CUMILLA/@23.4648969,91.1754532,17z/data=!3m1!4b1!4m6!3m5!1s0x37547f29b0492da9:0x581c887844a1707f!8m2!3d23.4648969!4d91.1754532!16s%2Fg%2F11b6qgt1cq?entry=ttu"
   },
   {
     id: 2,
@@ -12,6 +13,7 @@ export const projects = [
     des: " Sulivan Road , Bagichagaon(near fire brigade pond, Cumilla 3500",
     img: "Hospital2.jpg",
     link: "Sat-thu: 9.00 am-2.30 pm",
+    map: "https://www.google.com/maps/place/Cumilla+Diabetic+Hospital/@23.4650476,91.1681979,17z/data=!3m1!4b1!4m6!3m5!1s0x37547ed6f0834c29:0x698e4eae3663d5a1!8m2!3d23.4650427!4d91.1707728!16s%2Fg%2F1tf38x7p?entry=ttu"
   }
 ];
 
