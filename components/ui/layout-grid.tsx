@@ -24,7 +24,7 @@ export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
             className={cn(
               card.className,
               "relative overflow-hidden rounded-lg cursor-pointer",
-              "bg-white rounded-xl h-full w-full"
+              "bg-transparent rounded-xl h-full w-full"
             )}
             layout
           >
