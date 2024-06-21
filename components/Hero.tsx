@@ -68,7 +68,7 @@ const Hero = () => {
                   animate={{ opacity: 1 }}
                   transition={{ duration: 0.5, delay: 0.8 }}
                 >
-                  <FaClock className="text-xl text-[#0070F2] mr-4" />
+                  <FaClock className="text-sm sm:text-xl text-[#0070F2] mr-4 " />
                   <div>
                     <h3 className="font-semibold text-[#0D1B3C]">Working hours</h3>
                     <h2>Sat-Thu(4.30 pm - 9.00 pm)</h2>
@@ -82,7 +82,7 @@ const Hero = () => {
                   animate={{ opacity: 1 }}
                   transition={{ duration: 0.5, delay: 1 }}
                 >
-                  <FaPhone className="text-xl text-[#0070F2] mr-4" />
+                  <FaPhone className="text-sm sm:text-xl text-[#0070F2] mr-4 " />
                   <div>
                     <h3 className="font-semibold text-[#0D1B3C]">Emergency Service</h3>
                     <h3> (01755698087)</h3>
