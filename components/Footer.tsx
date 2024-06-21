@@ -9,17 +9,17 @@ const info = [
   {
     icon: <FaPhoneAlt />,
     title: 'phone',
-    description: '+8801936064767',
+    description: '+8801755698087',
   },
   {
     icon: <FaEnvelope />,
     title: 'email',
-    description: 'sahilfarib320@gmail.com',
+    description: 'shaidulshawon321@gmail.com',
   },
   {
     icon: <FaMapMarkerAlt />,
     title: 'Address',
-    description: 'Dhaka, Bangladesh',
+    description: '222/1, 1st- 6th Floor, Taher Trade Center, 12 Police Lines Rd, Cumilla 3500',
   },
 ];
 
@@ -87,7 +87,7 @@ const Footer = () => {
                     required
                     type="hidden"
                     name="access_key"
-                    value="9045a580-c72d-424e-949d-15880b8f56de"
+                    value="d6777874-f1a7-4994-8a76-b2db16b5e8be"
                   />
                   <Input
                     required

@@ -96,13 +96,13 @@ const cards = [
     content: <SkeletonThree />,
     className: "col-span-1",
     thumbnail:
-      "grid3.jpg",},
+      "grid1.jpeg",},
   {
     id: 4,
     content: <SkeletonFour />,
     className: "md:col-span-2",
     thumbnail:
-      "grid1.jpeg",},
+      "grid3.jpg",},
 ];
 
 export default Layout;

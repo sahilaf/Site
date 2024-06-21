@@ -62,10 +62,13 @@ function MobileNav() {
             className="relative flex flex-col justify-between p-8 h-screen box-border bg-[#0D1B3C] z-50"
           >
             <RxCross2
-              className="text-2xl cursor-pointer absolute top-4 right-4 mx-5 mt-6 text-white"
+              className="text-2xl cursor-pointer absolute top-4 right-4 mx-5 mt-6 text-white hover:text-[#5bc4d1]"
               onClick={() => setMenuOpen(false)}
             />
-            <div className="flex gap-2 flex-col mt-32 ml-6 mr-32">
+            <div className="flex gap-2 flex-col mt-14 ml-6 mr-32">
+              <div className="w-[40px] mb-14">
+                <img src="logo.png" alt="logo" />
+              </div>
               {links.map((link, i) => {
                 const { title, href } = link;
                 return (
@@ -82,7 +85,7 @@ function MobileNav() {
                     >
                       <a
                         href={href}
-                        className="no-underline text-white text-4xl"
+                        className="no-underline text-white text-4xl hover:text-[#5bc4d1]"
                         onClick={() => setMenuOpen(false)}
                       >
                         {title}

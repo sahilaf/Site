@@ -79,7 +79,7 @@ const HoverCard = ({ card }: { card: Card }) => {
     <motion.div
       className={cn(
         "relative overflow-hidden rounded-lg cursor-pointer",
-        "bg-white rounded-xl h-full w-full"
+        "bg-transparent rounded-xl h-full w-full"
       )}
       layout
       whileHover={!isTouchDevice() ? { scale: 1.03 } : undefined}
