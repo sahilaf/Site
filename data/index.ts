@@ -1,32 +1,18 @@
 export const projects = [
   {
     id: 1,
-    title: "3D Solar System Planets to Explore",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-    img: "p1.svg",
-    link: "/ui.earth.com",
+    title: "MEDICARE GENERAL HOSPITAL",
+    des: "222/1, 1st- 6th Floor, Taher Trade Center, 12 Police Lines Rd, Cumilla 3500",
+    img: "Hospital.PNG",
+    link: "Sat-thus: 4.30 pm-9.00 pm",
   },
   {
     id: 2,
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-    img: "p2.svg",
-    link: "/ui.yoom.com",
-  },
-  {
-    id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-    img: "p3.svg",
-    link: "/ui.aiimg.com",
-  },
-  {
-    id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    img: "p4.svg",
-    link: "/ui.apple.com",
-  },
+    title: "Cumilla Diabetic Hospital",
+    des: " Sulivan Road , Bagichagaon(near fire brigade pond, Cumilla 3500",
+    img: "Hospital2.jpg",
+    link: "Sat-thus: 9.00 am-2.30 pm",
+  }
 ];
 
 export const testimonials = [

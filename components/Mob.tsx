@@ -6,8 +6,7 @@ import { RiMenu3Fill } from "react-icons/ri";
 import { RxCross2 } from "react-icons/rx";
 
 const links = [
-  { title: "Home", href: "#" },
-  { title: "Work", href: "#work" },
+  { title: "Home", href: "#home" },
   { title: "Experience", href: "#experience" },
   { title: "Services", href: "#services" },
   { title: "Reviews", href: "#reviews" },
