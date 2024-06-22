@@ -8,10 +8,11 @@ interface Social {
 }
 
 const socials: Social[] = [
-  { icon: <FaInstagram />, path: "" },
+  { icon: <FaFacebook />, path: "https://www.facebook.com/profile.php?id=100005254758903" },
+  { icon: <FaInstagram />, path: "https://www.instagram.com/dr_shaidul_hoque/" },
   { icon: <FaLinkedin />, path: "" },
   { icon: <FaTwitter />, path: "" },
-  { icon: <FaFacebook />, path: "" },
+  
 ];
 
 interface SocialsProps {

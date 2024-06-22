@@ -3,7 +3,7 @@ import { FaLocationArrow, FaClock, FaPhone } from "react-icons/fa6";
 import MagicButton from "./MagicButton";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import Image from "next/image"; // Import next/image
-import Pic from "../public/Main.png";
+import Pic from "../public/hero2.png";
 import Socials from "./Socials";
 
 const Hero = () => {
@@ -11,16 +11,16 @@ const Hero = () => {
     <motion.section
       id="home"
       className="h-full mt-28 md:mt-12"
-      initial={{ opacity: 0, y: -50 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5 }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
     >
       <div className="container mx-auto h-full -mt-5 xl:-mt-20">
         <motion.div
           className="flex flex-col xl:flex-row items-center justify-between xl:pt-8"
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 0.2 }}
         >
           <div className="text-center xl:text-left order-2 xl:order-none">
             <TextGenerateEffect
@@ -35,7 +35,7 @@ const Hero = () => {
               className="flex justify-center md:justify-start"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ duration: 0.5, delay: 0.4 }}
+              transition={{ duration: 1, delay: 0.4 }}
             >
               <div>
                 <a href="#contact">
@@ -59,14 +59,14 @@ const Hero = () => {
               className="xl:pb-10 flex flex-row justify-evenly md:justify-start mt-10 text-base md:text-xl "
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ duration: 0.5, delay: 0.6 }}
+              transition={{ duration: 1, delay: 0.6 }}
             >
               <div className=" text-left text-gray-400 mr-4">
                 <motion.div
                   className="flex items-center justify-center md:justify-start space-x-2"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
-                  transition={{ duration: 0.5, delay: 0.8 }}
+                  transition={{ duration: 1, delay: 0.8 }}
                 >
                   <FaClock className="text-sm sm:text-xl text-[#0070F2] mr-4 " />
                   <div>
@@ -80,7 +80,7 @@ const Hero = () => {
                   className="flex items-center space-x-2 justify-center md:justify-start"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
-                  transition={{ duration: 0.5, delay: 1 }}
+                  transition={{ duration: 1, delay: 1 }}
                 >
                   <FaPhone className="text-sm sm:text-xl text-[#0070F2] mr-4 " />
                   <div>
@@ -95,7 +95,7 @@ const Hero = () => {
             className="order-1 xl:order-none mb-3 xl:mb-0 relative w-[300px] h-[300px] xl:w-[600px] xl:h-[600px]"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
+            transition={{ duration: 1, delay: 0.2 }}
           >
             <Image
               src={Pic}
