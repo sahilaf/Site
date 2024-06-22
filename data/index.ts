@@ -20,35 +20,41 @@ export const projects = [
 export const testimonials = [
   {
     quote:
-      "Dr. Shawon is fantastic! He is thorough, gentle, and makes you feel comfortable. Highly recommend for excellent dental care!",
+      "Dr. Shawon is fantastic! He is thorough, gentle, and makes you feel comfortable. Highly recommend!",
     name: "Jakir Hossain",
-    pic: ""
+    pic: "c2.png",
+    rating:"⭐⭐⭐⭐"
   },
   {
     quote:
-      "Dr. Shawon is simply the best! From the moment I walked into his clinic, I felt at ease. The staff is incredibly friendly and professional, making the entire experience seamless. Dr. Shawon is highly knowledgeable and took the time to explain every step of the procedure. My dental cleaning was thorough, and I left with my teeth feeling cleaner than ever. I highly recommend Dr. Shawon to anyone looking for top-notch dental care.",
+      "From the moment I walked into Dr. Shawon's clinic, I felt at ease. The staff is friendly and professional. My dental cleaning was thorough. Highly recommend!",
     name: "Rifa Islam",
-    pic: ""
+    pic: "c1.jpg",
+    rating:"⭐⭐⭐⭐⭐"
   },
   {
     quote:
-      "I had a great experience with Dr. Shawon. He is very patient and made sure I was comfortable throughout my visit. The clinic is clean and well-organized. I had a cavity filled, and Dr. Shawon was very gentle and efficient. My only minor complaint is that there was a bit of a wait before my appointment, but it was well worth it for the quality of care I received. I will definitely be returning.",
-    name: "Michael Johnson",
-    pic: ""
+      "Dr. Shawon is very patient and made sure I was comfortable throughout my visit. The clinic is clean and well-organized. I'll be returning!",
+    name: "Mehedi Hasan",
+    pic: "c3.png",
+    rating:"⭐⭐⭐⭐"
   },
   {
     quote:
-      "Dr. Shawon is an exceptional dentist! I recently had a root canal treatment done, and I was quite nervous about it. Dr. Shawon’s calm demeanor and clear explanations put me at ease. The procedure was virtually painless, and his follow-up care was excellent. The entire team at the clinic is courteous and helpful. I am very satisfied with my experience and will recommend Dr. Shawon to my friends and family.",
-    name: "Michael Johnson",
-    pic: ""
+      "Dr. Shawon’s calm demeanor and clear explanations put me at ease during my root canal. The procedure was virtually painless. Highly satisfied!",
+    name: "Forhad Hossain",
+    pic: "c4.png",
+    rating:"⭐⭐⭐⭐⭐"
   },
   {
     quote:
-      "Dr. Shawon is great with kids! I took my 6-year-old for his first dental check-up, and Dr. Shawon made it a fun and positive experience. He explained everything in a way my son could understand and was very gentle during the examination. My son left the clinic happy and excited for his next visit. The only reason I’m giving 4 stars instead of 5 is because the waiting room could use a few more toys or activities for children. Otherwise, fantastic service!",
-    name: "Michael Johnson",
-    pic: ""
+      "Dr. Shawon is great with kids! My 6-year-old had a fun and positive experience. The only downside was the waiting room could use more toys.",
+    name: "Sadia Akter",
+    pic: "c5.png",
+    rating:"⭐⭐⭐⭐"
   },
 ];
+
 export const workExperience = [
   {
     id: 1,
