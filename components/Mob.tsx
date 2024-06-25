@@ -59,7 +59,7 @@ function MobileNav() {
             animate={{ y: 0, opacity: 1}}
             exit={{ y: "-100%" }}
             transition={{ type: "spring", stiffness: 100, damping: 15 }}
-            className="relative flex flex-col justify-between p-8 h-screen box-border bg-gradient-to-br from-[#0D1B3C] to-[#0070F2] z-50"
+            className="relative flex flex-col justify-between p-8 h-screen box-border bg-gradient-to-br from-[#0D1B3C] to-[#0070F2] z-50 pt-10"
 
           >
             <RxCross2
