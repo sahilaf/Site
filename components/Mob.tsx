@@ -63,7 +63,7 @@ function MobileNav() {
 
           >
             <RxCross2
-              className="text-2xl cursor-pointer absolute top-4 right-4 mx-5 mt-6 text-white"
+              className="text-2xl cursor-pointer absolute top-4 right-4 mx-5 mt-16 text-white"
               onClick={() => setMenuOpen(false)}
             />
             <div className="flex gap-2 flex-col mt-14 ml-6 mr-32">
