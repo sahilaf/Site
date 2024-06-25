@@ -124,3 +124,10 @@
   position: relative;
   overflow: hidden;
 }
+
+
+.blur-md {
+  filter: blur(8px);
+  -webkit-filter: blur(8px); /* Safari */
+  backface-visibility: hidden; /* Trigger hardware acceleration */
+}
